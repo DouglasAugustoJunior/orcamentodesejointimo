@@ -344,6 +344,71 @@
     transition: transform .15s, box-shadow .15s;
   }
   .print-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(181,72,93,0.5); }
+
+  /* ── MOBILE ─────────────────────────────────────────── */
+  @media (max-width: 600px) {
+    :root { --section-gap: 48px; }
+
+    /* Nav */
+    .topbar { padding: 12px 18px; }
+    .topbar-links { display: none; }
+    .topbar-cta { padding: 7px 16px; font-size: 12px; }
+
+    /* Hero */
+    .hero { padding: 52px 20px 64px; }
+    .hero-logo { width: 110px; height: 110px; margin-bottom: 20px; }
+    .hero-title { font-size: 2rem; }
+    .hero-subtitle { font-size: 1rem; margin-bottom: 28px; }
+    .hero-pills { gap: 8px; margin-bottom: 32px; }
+    .pill { font-size: 11px; padding: 5px 13px; }
+    .hero-cards { gap: 12px; }
+    .hero-card { min-width: 0; width: 100%; max-width: 100%; padding: 20px 18px; }
+    .hero-card-value { font-size: 1.6rem; }
+
+    /* Sections */
+    .section { padding: var(--section-gap) 18px; }
+    .section-intro { margin-bottom: 28px; }
+    hr.divider { margin: 0 18px; }
+
+    /* Phase cards — stack */
+    .phases-grid { grid-template-columns: 1fr; gap: 20px; }
+    .phase-header { padding: 22px 20px 18px; }
+    .phase-name { font-size: 1.5rem; }
+    .phase-meta { gap: 16px; }
+    .phase-meta-value { font-size: 1.3rem; }
+    .phase-body { padding: 18px 20px; }
+
+    /* Feature table — card-style on mobile */
+    .table-wrap { border-radius: 10px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    table.feat { font-size: 12px; min-width: 560px; }
+    table.feat thead th { padding: 10px 10px; font-size: 10px; }
+    table.feat td { padding: 9px 10px; }
+    table.feat tfoot td { padding: 10px; font-size: 13px; }
+    table.feat .price { font-size: 1rem; }
+
+    /* Value grid */
+    .value-grid { grid-template-columns: 1fr; gap: 14px; }
+
+    /* Scope out */
+    .scope-out { padding: 20px 18px; }
+    .scope-out ul { grid-template-columns: 1fr; }
+
+    /* Commercial */
+    .commercial-grid { grid-template-columns: 1fr; gap: 16px; }
+    .commercial-card { padding: 20px 18px; }
+
+    /* CTA block */
+    .cta-block { padding: 36px 20px; border-radius: 14px; }
+    .cta-title { font-size: 1.7rem; }
+    .cta-buttons { flex-direction: column; align-items: stretch; }
+    .btn-primary, .btn-outline { text-align: center; padding: 14px 20px; }
+
+    /* Footer */
+    footer { padding: 24px 18px; }
+
+    /* Print button */
+    .print-btn { bottom: 18px; right: 18px; padding: 10px 16px; font-size: 12px; }
+  }
 </style>
 </head>
 <body>
